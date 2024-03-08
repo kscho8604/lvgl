@@ -72,6 +72,7 @@ LV_IMAGE_DECLARE(img_multilang_avatar_22);
 LV_IMAGE_DECLARE(img_multilang_avatar_25);
 
 static card_info_t card_info[] = {
+	CARD_INFO_SET(&img_multilang_avatar_22, "철인", "수영, 자전거와 달리기를 좋아함"),
     CARD_INFO_SET(&img_multilang_avatar_5, "Zhang Wei", "对编程和技术充满热情。 开源倡导者🚀"),
     CARD_INFO_SET(&img_multilang_avatar_18, "Ali Reza Karami", "عاشق تاریخ و عاشق همه چیز عتیقه. قسمت مورد علاقه من قرن 19 است."),
     CARD_INFO_SET(&img_multilang_avatar_25, "Sunita Kapoor", "🌍🌳 हरित कार्यकर्ता, एक स्थायी कल के लिए प्रयासरत। "),
