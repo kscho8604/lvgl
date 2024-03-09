@@ -44,7 +44,7 @@ static lv_style_t style_hide;
 
 extern lv_font_t font_multilang_small;
 extern lv_font_t font_multilang_large;
-
+extern lv_font_t NotoSansKR_Regular_28;
 /**********************
  *      MACROS
  **********************/
@@ -72,7 +72,7 @@ LV_IMAGE_DECLARE(img_multilang_avatar_22);
 LV_IMAGE_DECLARE(img_multilang_avatar_25);
 
 static card_info_t card_info[] = {
-	CARD_INFO_SET(&img_multilang_avatar_22, "철인", "수영, 자전거와 달리기를 좋아함"),
+	CARD_INFO_SET(&img_multilang_avatar_22, "철인", "Like swim, bike and run"),
     CARD_INFO_SET(&img_multilang_avatar_5, "Zhang Wei", "对编程和技术充满热情。 开源倡导者🚀"),
     CARD_INFO_SET(&img_multilang_avatar_18, "Ali Reza Karami", "عاشق تاریخ و عاشق همه چیز عتیقه. قسمت مورد علاقه من قرن 19 است."),
     CARD_INFO_SET(&img_multilang_avatar_25, "Sunita Kapoor", "🌍🌳 हरित कार्यकर्ता, एक स्थायी कल के लिए प्रयासरत। "),
@@ -199,7 +199,7 @@ void lv_demo_multilang(void)
     lv_style_set_bg_grad_color(&style_hide, lv_color_hex(0x4173ff));
     lv_style_set_bg_grad_dir(&style_hide, LV_GRAD_DIR_HOR);
     lv_style_set_radius(&style_hide, 12);
-    lv_style_set_text_font(&style_hide, &font_multilang_large);
+    lv_style_set_text_font(&style_hide, &NotoSansKR_Regular_28);
     lv_style_set_text_color(&style_hide, lv_color_hex(0xffffff));
 
     lv_style_init(&style_placeholder);
