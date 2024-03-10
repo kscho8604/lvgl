@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file lv_demo_multilang.c
  * Recommended resolution 470x640
  */
@@ -45,6 +45,8 @@ static lv_style_t style_hide;
 extern lv_font_t font_multilang_small;
 extern lv_font_t font_multilang_large;
 extern lv_font_t NotoSansKR_Regular_28;
+extern lv_font_t NotoSansKR_Regular_1BIT;
+
 /**********************
  *      MACROS
  **********************/
@@ -325,7 +327,7 @@ static void card_create(lv_obj_t * parent, card_info_t * info)
     lv_obj_t * name = lv_label_create(card);
     lv_label_set_text(name, info->name);
     lv_obj_set_grid_cell(name, LV_GRID_ALIGN_START, 2, 1, LV_GRID_ALIGN_CENTER, 0, 1);
-    lv_obj_set_style_text_font(name, &font_multilang_large, 0);
+    lv_obj_set_style_text_font(name, &NotoSansKR_Regular_28, 0);
 
     lv_obj_t * description = lv_label_create(card);
     lv_label_set_text(description, info->description);
